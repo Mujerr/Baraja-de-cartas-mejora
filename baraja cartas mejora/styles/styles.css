@@ -1,0 +1,310 @@
+body{
+    background-color: green; 
+}
+.carta{
+height: 240px;
+width: 160px;
+background-color: rgb(215, 226, 226);
+border-radius: 7px;
+border: black 2px solid;
+}
+
+.numeropalo{
+    font-size: 25px;
+}   
+
+.numero{
+    font-size: 25px;
+    position: relative;
+    left: 5px;
+}
+.palo{
+    font-size: 25px;
+    position: relative;
+    top: -5px;
+    left: 5px;
+}
+
+.forma{
+    font-size: 50px;
+    position: absolute;
+}
+
+
+/*carta de picas */
+
+#picas_4{
+    animation-name: animacion_picas;
+    animation-duration: 3s;
+    animation-delay: 9s; 
+    animation-iteration-count: 2;
+    animation-direction: alternate; /*Para que vuelva la carta*/
+
+
+    position:relative;
+    transform: rotate(0deg);
+    left: 800px;
+    top: 400px;
+    z-index: 8;
+    }    
+
+.numeropalo_invertido{
+    transform: rotate(180deg);
+    position:absolute;
+    top:180px;
+    left: 145px;
+    font-size: 25px;
+}
+#pica_1{
+    left: 30px;
+    top: 30px;
+}
+#pica_2{
+    left: 110px;
+    top: 30px;
+}
+#pica_3{
+    left: 30px;
+    top: 160px;
+}
+#pica_4{
+    left: 110px;
+    top:  160px;
+    background-color: rgba(255, 255, 255, 0);
+}
+/*carta de picas*/
+
+/*Carta de trebol*/
+
+#trebols_7{
+    animation-name: animacion_treboles;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position:relative;
+    transform: rotate(0deg);
+    left: 800px;
+    top: 153px;
+    z-index: 10;
+    }  
+
+.numeropalo_invertido_trebol{
+
+    transform: rotate(180deg);
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    font-size: 25px;
+
+}
+#trebol_1{
+
+    left: 25px;
+    top: 20px;
+
+}
+#trebol_2{
+
+    left: 105px;
+    top: 20px;
+}
+#trebol_3{
+
+    left: 65px;
+    top: 60px;
+    
+}
+#trebol_4{
+
+    left: 25px;
+    top: 100px;
+
+}
+#trebol_5{
+
+    left: 105px;
+    top: 100px;
+
+}
+#trebol_6{
+
+    transform: rotate(180deg);
+    left: 25px;
+    top: 170px;
+
+}
+#trebol_7{
+
+    transform: rotate(180deg);
+    left: 105px;
+    top: 170px;
+    
+}
+/*fin carta trebol*/
+
+.numerorojo{
+    color: rgb(204, 31, 31);
+    font-size: 30px;
+    position: relative;
+    left: 5px;
+}
+.palorojo{
+    color:rgb(204, 31, 31);
+    font-size: 30px;
+    position: relative;
+    top: -5px;
+    left: 5px;
+}
+
+
+/*Incio carta corazones*/
+
+
+#corazones_6{
+    animation-name: animacion_corazones;
+    animation-duration: 3s;
+    animation-delay: 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position:relative;
+    transform: rotate(0deg);
+    left: 800px;
+    top: -90px;
+    z-index: 9;
+    }  
+
+.numeropalo_invertido_corazon{
+
+    transform: rotate(180deg);
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    font-size: 25px;
+
+}
+#corazon_1{
+    color: rgb(204, 31, 31);
+    left: 25px;
+    top: 20px;
+}
+
+#corazon_2{
+    color: rgb(204, 31, 31);
+    left: 105px;
+    top: 20px;
+}
+#corazon_3{
+    color: rgb(204, 31, 31);
+    left: 25px;
+    top: 100px;
+}
+#corazon_4{
+    color: rgb(204, 31, 31);
+    left: 105px;
+    top: 100px;
+
+}
+#corazon_5{
+    color: rgb(204, 31, 31);
+    transform: rotate(180deg);
+    left: 25px;
+    top: 170px;
+
+}
+#corazon_6{
+    color: rgb(204, 31, 31);
+    transform: rotate(180deg);
+    left: 105px;
+    top: 170px;
+    
+}
+
+/*fin carta corazones*/
+
+/*Incio carta AS*/
+
+#as{
+    position:relative;
+    transform: rotate(0deg);
+    left: 800px;
+    top:-330px;
+    z-index: 7;
+    }  
+
+.numeropalo_invertido_as{
+
+    transform: rotate(180deg);
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    font-size: 25px;
+
+}
+#diamante_1{
+    color: rgb(204, 31, 31);
+    left: 50px;
+    top: 60px;
+    font-size: 100px;
+}
+
+
+/*Fin carta AS*/
+
+/*ANIMACION CARTAS*/
+
+@keyframes animacion_treboles
+     {
+        0%{
+            top:  153px;
+            left:  800px;
+            z-index:  10;
+            opacity: 1;
+        }
+        
+
+        100%{
+            top:  190px;
+            left:  1050px;
+            transform:  rotate(90deg);
+            opacity: 0;
+        }
+     }
+
+    @keyframes animacion_corazones
+     {
+        0%{
+            top:  -90px;
+            left:  800px;
+            z-index:  9;
+            opacity: 1;
+        }
+
+        100%{
+            top:  -50px;
+            left:  1080px;
+            transform:  rotate(90deg);
+            opacity: 0;
+        }
+     }  
+
+
+
+     @keyframes animacion_picas
+     {
+        0%{
+            top:  400px;
+            left:  800px;
+            z-index:  8;
+            opacity: 1;
+        }
+
+        100%{
+            top:  450px;
+            left:  1110px;
+            transform:  rotate(90deg);
+            opacity: 0;
+        }
+     }       
+
+
